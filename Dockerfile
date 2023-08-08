@@ -12,6 +12,5 @@ RUN echo "http://dl-4.alpinelinux.org/alpine/edge/community/" >> /etc/apk/reposi
     rm -rf /tmp/* /var/tmp/* /var/cache/apk/* /var/cache/distfiles/*
 
 # Configure tun
-RUN mkdir -p /dev/net && \
-     mknod /dev/net/tun c 10 200 
+RUN mkdir -p /dev/net
 
